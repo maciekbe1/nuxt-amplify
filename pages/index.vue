@@ -4,31 +4,33 @@
       <Logo />
       <h1 class="title">nuxt-amplify</h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
+        <nuxt-link
+          to="/about"
+          class="px-3 py-2 rounded-lg text-white bg-gray-800 active:bg-gray-600 hover:bg-white hover:text-black border-2 border-transparent hover:border-gray-800"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
+          About
+        </nuxt-link>
+        <br />
+        <br />
+        <button
+          class="px-3 py-2 rounded-lg text-white bg-gray-800 hover:bg-white active:bg-gray-500 hover:text-black border-2 border-transparent hover:border-gray-800 focus:outline-none"
         >
-          GitHub
-        </a>
+          button
+        </button>
+        <button
+          class="px-3 py-2 rounded-lg text-white bg-green-500 active:bg-green-700 focus:outline-none"
+        >
+          Click me
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
-export default Vue.extend({})
+export default Vue.extend({});
 </script>
 
 <style>
@@ -47,8 +49,8 @@ export default Vue.extend({})
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
